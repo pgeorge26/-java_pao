@@ -1,1 +1,1 @@
-# -java_pao
+# Toate laboratoarele ,proiectele la materia PAO
