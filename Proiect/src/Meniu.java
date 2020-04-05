@@ -47,9 +47,6 @@ public class Meniu   {
                 '}';
     }
 
-  //  @Override
-   // public int compareTo(Meniu meniu) {
-   //     return this.getNumeMancare().compareTo(meniu.getNumeMancare());
-  //  }
+ 
 
 }
