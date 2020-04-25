@@ -1,5 +1,7 @@
 package Complex;
 
+import myLog.Log;
+
 public class Masa {
 
     private int pozitie_masa;
@@ -8,6 +10,7 @@ public class Masa {
     public Masa(int pozitie_masa, boolean debarasata) {
         this.pozitie_masa = pozitie_masa;
         this.debarasata = debarasata;
+        Log.logData("Am adaugat o masa noua   " + this);
     }
 
     public int getPozitie_masa() {

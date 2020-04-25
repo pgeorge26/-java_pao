@@ -10,6 +10,7 @@ public abstract class Angajat {
         this.nume = nume;
         this.prenume = prenume;
         this.bacsis = bacsis;
+
     }
 
     public abstract int calculSal();

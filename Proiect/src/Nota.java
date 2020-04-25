@@ -34,5 +34,12 @@ public class Nota {
         this.status = status;
     }
 
-
+    @Override
+    public String toString() {
+        return "Nota{" +
+                "tip='" + tip + '\'' +
+                ", suma=" + suma +
+                ", status=" + status +
+                '}';
+    }
 }

@@ -1,10 +1,8 @@
 import Angajati.Angajat;
-import Angajati.Bucatar;
-import Angajati.Manager;
-import Angajati.Ospatar;
 import Complex.Masa;
-import Complex.Pub;
-import Complex.Terasa;
+import Test.Meniu;
+import myLog.Log;
+
 
 import java.util.*;
 
@@ -25,6 +23,7 @@ public class Restaurant  {
         this.numar_angajati = numar_angajati;
         this.meniu = meniu;
         this.mese = mese;
+        Log.logData("Avem un nou Restaurant  " + this);
     }
 
     public void adaugaMasa(Masa masa)
@@ -61,6 +60,7 @@ public class Restaurant  {
          if(nota.isStatus()==false) {
              nota.setStatus(true);
              System.out.println("Suma achitata");
+             Log.logData("Nota de la masa " + masa.getPozitie_masa() + " a fost platita");
          }
 
 

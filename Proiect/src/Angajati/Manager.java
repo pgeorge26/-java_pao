@@ -1,5 +1,7 @@
 package Angajati;
 
+import myLog.Log;
+
 public class Manager extends Angajat {
 
     private int salariu;
@@ -7,6 +9,7 @@ public class Manager extends Angajat {
     public Manager(String nume, String prenume, int bacsis, int salariu) {
         super(nume, prenume, bacsis);
         this.salariu = salariu;
+        Log.logData("Avem un nou   " + this);
     }
 
     public int getSalariu() {

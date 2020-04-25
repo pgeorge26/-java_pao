@@ -1,0 +1,20 @@
+Avem un nou   Ospatar{nume='Ion', prenume='Predoiu', bacsis=200} salariu Ospatar =2083lei },2020-04-26 01:02:50.829
+Avem un nou   Ospatar{nume='Marian', prenume='Predoiu', bacsis=200} salariu Ospatar =2133lei },2020-04-26 01:02:50.847
+Avem un nou   Ospatar{nume='George', prenume='Morel', bacsis=200} salariu Ospatar =2083lei },2020-04-26 01:02:50.847
+Avem un nou   Bucatar{nume='Claudiu', prenume='Iosif', bacsis=200} salariu Bucatar =3066 lei},2020-04-26 01:02:50.848
+Avem un nou   Manager{nume='Razvan', prenume='Alex', bacsis=0} salariu Manager =5200 lei },2020-04-26 01:02:50.849
+Avem un nou meniu  {numeMancare='Friptura de pui', pret=18, cantitate=200grame},2020-04-26 01:02:50.863
+Avem un nou meniu  {numeMancare='Friptura de porc', pret=27, cantitate=100grame},2020-04-26 01:02:50.863
+Avem un nou meniu  {numeMancare='Ciorba', pret=10, cantitate=250grame},2020-04-26 01:02:50.863
+Am adaugat o masa noua   Masa{pozitie_masa=1, debarasata=true},2020-04-26 01:02:50.872
+Am adaugat o masa noua   Masa{pozitie_masa=2, debarasata=false},2020-04-26 01:02:50.872
+Am adaugat o masa noua   Masa{pozitie_masa=3, debarasata=false},2020-04-26 01:02:50.872
+Avem un nou Restaurant  Restaurant{numeRestaurant='Amada', Adresa='Campulung', IBAN=142342213, numar_angajati=0, Angajati=[null, null, null, null, null, null, null, null], meniu=[], mese=[]},2020-04-26 01:02:50.905
+Nota de la masa 1 a fost platita,2020-04-26 01:02:50.947
+Avem un nou   Bucatar{nume='Pietrareanu', prenume='Marian', bacsis=100} salariu Bucatar =2133 lei},2020-04-26 01:02:50.963
+Avem un nou   Ospatar{nume='Ion', prenume='Vasile', bacsis=100} salariu Ospatar =1766lei },2020-04-26 01:02:50.964
+Avem un nou   Ospatar{nume='Marin', prenume='Iordache', bacsis=250} salariu Ospatar =2126lei },2020-04-26 01:02:50.964
+Avem un nou meniu  {numeMancare='Ciorba', pret=10, cantitate=100grame},2020-04-26 01:02:50.967
+Avem un nou meniu  {numeMancare='Friptura de pui', pret=29, cantitate=250grame},2020-04-26 01:02:50.967
+Am adaugat o masa noua   Masa{pozitie_masa=6, debarasata=true},2020-04-26 01:02:50.969
+Am adaugat o masa noua   Masa{pozitie_masa=7, debarasata=false},2020-04-26 01:02:50.971
