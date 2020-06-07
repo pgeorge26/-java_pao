@@ -1,12 +1,15 @@
+import Angajati.Angajat;
 import Angajati.Bucatar;
 import Angajati.Manager;
 import Angajati.Ospatar;
 import Complex.Masa;
 import Test.Meniu;
+import database.servicii;
 import fisier.fisierAngajati;
 import fisier.fisierMeniuri;
 import fisier.fisierMese;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -14,7 +17,7 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Ospatar ospatar1 = new Ospatar("Ion", "Predoiu", 200, 1950);
         Ospatar ospatar2 = new Ospatar("Marian", "Predoiu", 200, 2000);
         Ospatar ospatar3 = new Ospatar("George", "Morel", 200, 1950);
@@ -76,6 +79,29 @@ public class Main {
         mese2.adaugaMeseFisier("src/date/mese.csv");
         System.out.println("Mese");
         System.out.println(mese2);
+
+
+//Partea cu baza de date
+        servicii app = new servicii();
+        app.addAngajat("Bucatar","ion","marian",1700,300);
+        app.addAngajat("Ospatar","Vasile","Predoiu",1700,300);
+        app.addAngajat("Manager","Eleba","Maria",1700,300);
+        app.addAngajat("Manager","Iordache","Maria",1700,300);
+        app.concediazaAngajat("Iordache");
+        app.addMeniu("Ciorba de fasole",16,260);
+        app.stergeMeniu("Ciorba");
+        app.addMasa(1,true);
+        app.addMasa(2,false);
+        app.stergeMasa(2);
+        //app.debaraseazaMasa(1,true);
+        app.updateMeniu("Ciorba de fasole",100,600);
+        app.updateNota("cash",servicii.getPret("Ciorba de fasole"),false,2);
+
+        List<Angajat> dba = servicii.afiseazaAngajati();
+        System.out.println(dba);
+
+        List<Meniu> dbd = servicii.meniuri();
+        System.out.println(dbd);
 
     }
 }
